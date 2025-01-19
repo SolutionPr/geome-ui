@@ -12,11 +12,11 @@
   },
   "homepage": "https://biscicol.org",
   "scripts": {
-    "build": "rimraf dist && webpack --bail --profile",
+    "build": "node init && rimraf dist && webpack --bail --profile",
     "server": "webpack-dev-server",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
-    "start": "npm run server",
+    "start": "node init && npm run server",
     "eslint": "eslint 'src/app/**/*.js'",
     "eslint:fix": "eslint 'src/app/**/*.js' --fix",
     "prettier": "prettier -l 'src/app/**/*' 'src/style/**/*' 'src/public/*.html'",

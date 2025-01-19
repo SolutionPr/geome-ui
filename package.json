@@ -16,7 +16,7 @@
     "server": "webpack-dev-server",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
-    "start": "npm run server",
+    "start": "node api.js && npm run server",
     "eslint": "eslint 'src/app/**/*.js'",
     "eslint:fix": "eslint 'src/app/**/*.js' --fix",
     "prettier": "prettier -l 'src/app/**/*' 'src/style/**/*' 'src/public/*.html'",
